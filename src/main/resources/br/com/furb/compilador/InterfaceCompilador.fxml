@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="910.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.furb.compilador.InterfaceController">
+   <top>
+      <ToolBar prefHeight="70.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <items>
+            <Button fx:id="btnNovo" contentDisplay="TOP" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnNovoAction" text="novo [ctrl-n]">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@./imagens/novo.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnAbrir" contentDisplay="TOP" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnAbrirAction" text="abrir [ctrl-o]">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@./imagens/abrir.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnSalvar" contentDisplay="TOP" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnSalvarAction" text="salvar [ctrl-s]">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@./imagens/salvar.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnCopiar" contentDisplay="TOP" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnCopiarAction" text="copiar [ctrl-c]">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@./imagens/copiar.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnColar" contentDisplay="TOP" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnColarAction" text="colar [ctrl-v]">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@./imagens/colar.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnRecortar" contentDisplay="TOP" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnRecortarAction" text="recortar [ctrl-x]">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@./imagens/recortar.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnCompilar" contentDisplay="TOP" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnCompilarAction" text="compilar [F7]">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@./imagens/compilar.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="btnEquipe" contentDisplay="TOP" maxHeight="1.7976931348623157E308" mnemonicParsing="false" onAction="#onBtnEquipeAction" text="equipe [F1]">
+               <graphic>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <Image url="@./imagens/equipe.png" />
+                  </ImageView>
+               </graphic>
+            </Button>
+         </items>
+      </ToolBar>
+   </top>
+   <center>
+      <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
+        <items>
+            <TextArea prefHeight="200.0" prefWidth="200.0" />
+            <TextArea prefHeight="200.0" prefWidth="200.0" />
+        </items>
+      </SplitPane>
+   </center>
+   <bottom>
+      <Label text="pasta/nome-do-arquivo.txt" BorderPane.alignment="CENTER_LEFT">
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </Label>
+   </bottom>
+</BorderPane>
